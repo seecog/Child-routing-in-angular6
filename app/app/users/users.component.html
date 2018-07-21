@@ -1,0 +1,12 @@
+<h1>User List</h1>
+<hr>
+<table>
+  <th>Name</th><th>Age</th><th>Salary</th>
+  <tr *ngFor="let x of emps">
+<td><a [routerLink]="['/users/',x.key]">{{x.data.name}}</a></td>
+<td>{{x.data.age}}</td>
+<td>{{x.data.salary}}</td>
+  </tr>
+</table>
+<hr>
+<router-outlet></router-outlet>
